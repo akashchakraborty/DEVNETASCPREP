@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## Cisco DevNet Learning Labs: Cisco DNA Center Sample Code
 
 This repository contains the sample code to go along with [Cisco DevNet Learning Labs](https://developer.cisco.com/learning) covering network programmability topics.  During the setup steps of the labs, you'll be asked to clone this repository down to your workstation to get started.  
@@ -34,3 +35,8 @@ These learning modules are for public consumption, so you must ensure that you h
 
 * If you'd like to contribute to an existing lab, refer to [contributing.md](contributing.md).
 * If you're interested in creating a new Cisco DevNet Learning Lab, please contact a DevNet administrator for guidance.
+=======
+# DEVNETASCPREP
+>>>>>>> f3e8b8535d7e08cb43c8a9cfee5cc8dca2687618
+> 
+> ok
