@@ -34,3 +34,7 @@ tenants = requests.get("https://sandboxapicdc.cisco.com/api/node/class/fvTenant.
 
 # Requests stores the text of the response in the .text attribute.  Lets print it to see raw XML
 print(tenants.text)
+
+dom = xml.dom.minidom.parseString(tenants.text)
+xml = dom.toprettyxml()
+print(xml)
