@@ -38,3 +38,13 @@ print('++++++++++++')
 dom = xml.dom.minidom.parseString(tenants.text)
 xml = dom.toprettyxml()
 print(xml)
+print("++++++++++++")
+tenant_objects = dom.firstChild
+if tenant_objects.hasChildNodes:
+ tenant_element = tenant_objects.firstChild
+ while tenant_element is not None:
+     if tenant_element.tagName == 'fvTenant':
+         health_element = tenant_element.firstChild
+         output = "Tenant: "  + tenant_element.getAttribute('name') + '\t Health Score: ' + health_element.getAttribute('cur')
+         print(output.expandtabs(40))
+         tenant_element = tenant_element.nextSibling
